@@ -1,0 +1,167 @@
+const movies = [
+{
+id: 1,
+title: "F1 (Формула 1)",
+year: 2025,
+rating: "Ожидается",
+poster: "https://image.tmdb.org/t/p/w500/6eJ6R5V1b0Q0Zz7Z84qxd6QbaAW.jpg",
+trailer: "8hYlB38asDY",
+director: "Джозеф Косински",
+cast: ["Брэд Питт","Дамсон Идрис","Хавьер Бардем","Керри Кондон"],
+desc: "Фильм о мире Формулы-1."
+},
+{
+id: 2,
+title: "Форсаж",
+year: 2001,
+rating: "7.8",
+poster: "https://image.tmdb.org/t/p/w500/4T0O8H2y9z8b5nX9xFZgqC9ZlXK.jpg",
+trailer: "2TAOizOnNPo",
+director: "Роб Коэн",
+cast: ["Вин Дизель","Пол Уокер"],
+desc: "Уличные гонки и криминал."
+},
+{
+id: 3,
+title: "Гонка (Rush)",
+year: 2013,
+rating: "8.1",
+poster: "https://image.tmdb.org/t/p/w500/4bG9s3oG3rG4d8qzYh9k7VDaRao.jpg",
+trailer: "lIF7hRLx7oM",
+director: "Рон Ховард",
+cast: ["Крис Хемсворт","Даниэль Брюль"],
+desc: "История гонщиков Формулы-1."
+},
+{
+id: 4,
+title: "Интерстеллар",
+year: 2014,
+rating: "8.6",
+poster: "https://image.tmdb.org/t/p/w500/nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg",
+trailer: "zSWdZVtXT7E",
+director: "Кристофер Нолан",
+cast: ["Мэттью Макконахи","Энн Хэтэуэй"],
+desc: "Путешествие через космос."
+},
+{
+id: 5,
+title: "Темный рыцарь",
+year: 2008,
+rating: "9.0",
+poster: "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+trailer: "EXeTwQWaywY",
+director: "Кристофер Нолан",
+cast: ["Кристиан Бейл","Хит Леджер"],
+desc: "Бэтмен против Джокера."
+},
+{
+id: 6,
+title: "Начало",
+year: 2010,
+rating: "8.7",
+poster: "https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg",
+trailer: "YoHD9XEInc0",
+director: "Кристофер Нолан",
+cast: ["Леонардо Ди Каприо"],
+desc: "Сны внутри снов."
+},
+{
+id: 7,
+title: "Мстители: Финал",
+year: 2019,
+rating: "8.4",
+poster: "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
+trailer: "TcMBFSGVi1c",
+director: "Руссо",
+cast: ["Роберт Дауни мл."],
+desc: "Финал Marvel."
+},
+{
+id: 8,
+title: "Зеленая миля",
+year: 1999,
+rating: "9.1",
+poster: "https://image.tmdb.org/t/p/w500/velWPhVMQeQKcxggNEU8YmIo52R.jpg",
+trailer: "Ki4haFrqSrw",
+director: "Фрэнк Дарабонт",
+cast: ["Том Хэнкс"],
+desc: "История заключенного."
+},
+{
+id: 9,
+title: "Побег из Шоушенка",
+year: 1994,
+rating: "9.1",
+poster: "https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg",
+trailer: "NmzuHjWmXOc",
+director: "Фрэнк Дарабонт",
+cast: ["Тим Роббинс"],
+desc: "Побег из тюрьмы."
+},
+{
+id: 10,
+title: "Бойцовский клуб",
+year: 1999,
+rating: "8.6",
+poster: "https://image.tmdb.org/t/p/w500/bptfVGEQuv6vDTIMVCHjJ9Dz8PX.jpg",
+trailer: "qtRKdVHc-cE",
+director: "Финчер",
+cast: ["Брэд Питт"],
+desc: "Подпольные бои."
+},
+{
+id: 11,
+title: "Матрица",
+year: 1999,
+rating: "8.5",
+poster: "https://image.tmdb.org/t/p/w500/aOIuZAjPaRIE6CMzbazvcHuHXDc.jpg",
+trailer: "vKQi3bBA1y8",
+director: "Вачовски",
+cast: ["Киану Ривз"],
+desc: "Мир — симуляция."
+},
+{
+id: 12,
+title: "Гладиатор",
+year: 2000,
+rating: "8.6",
+poster: "https://image.tmdb.org/t/p/w500/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg",
+trailer: "owK1qxDselE",
+director: "Ридли Скотт",
+cast: ["Рассел Кроу"],
+desc: "Гладиатор и месть."
+},
+{
+id: 13,
+title: "Леон",
+year: 1994,
+rating: "8.7",
+poster: "https://image.tmdb.org/t/p/w500/mXvO50mHn1n0N8yI5C7Z6mI6N1p.jpg",
+trailer: "DcsirofJrlM",
+director: "Люк Бессон",
+cast: ["Жан Рено"],
+desc: "Киллер и девочка."
+},
+{
+id: 14,
+title: "Джокер",
+year: 2019,
+rating: "8.4",
+poster: "https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
+trailer: "zAGVQLHvwOY",
+director: "Тодд Филлипс",
+cast: ["Хоакин Феникс"],
+desc: "История Джокера."
+},
+{
+id: 15,
+title: "Титаник",
+year: 1997,
+rating: "7.9",
+poster: "https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg",
+trailer: "kVrqfYjkTdQ",
+director: "Джеймс Кэмерон",
+cast: ["Ди Каприо"],
+desc: "Любовь на Титанике."
+}
+];
